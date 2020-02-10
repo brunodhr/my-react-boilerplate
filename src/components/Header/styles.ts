@@ -16,6 +16,7 @@ export const Container = styled.div`
   align-items: center;
   padding: 0 30px;
   justify-content: space-between;
+  transition: 0.5s;
 `
 
 export const Logo = styled.svg`

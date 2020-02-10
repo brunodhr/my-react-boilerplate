@@ -12,7 +12,7 @@ export const Menu = styled.div`
   align-items: center;
   padding: 0 20%;
   @media (min-width: 320px) and (max-width: 425px) {
-    flex-direction: column;
+    justify-content: space-between;
   }
 `
 
