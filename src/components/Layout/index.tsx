@@ -1,13 +1,14 @@
 import React from 'react'
+import styled from 'styled-components'
 
-import * as S from './styles'
+export const Wrapper = styled.body`
+  height: 100vh;
+`
 
 interface Props {
   children: any
 }
 
-const Layout: React.FC<Props> = ({ children }) => {
-  return <S.Wrapper>{children}</S.Wrapper>
-}
+const Layout: React.FC<Props> = ({ children }) => <Wrapper>{children}</Wrapper>
 
 export default Layout

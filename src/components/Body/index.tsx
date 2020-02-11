@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const StyledBody = styled.body`
+const Container = styled.div`
   transition: 0.5s;
   padding: 10px;
   height: calc(100vh - 113px);
@@ -18,7 +18,7 @@ interface Props {
 }
 
 const Body: React.FC<Props> = ({ children }) => (
-  <StyledBody>{children}</StyledBody>
+  <Container>{children}</Container>
 )
 
 export default Body
