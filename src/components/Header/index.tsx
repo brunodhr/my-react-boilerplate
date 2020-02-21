@@ -8,6 +8,8 @@ import { Br, En } from 'flags'
 
 import * as S from './styles'
 
+import { Toogle } from 'components'
+
 interface Props {
   toogleTheme(): void
 }
@@ -37,6 +39,7 @@ const Header: React.FC<Props> = ({ toogleTheme }) => {
           <path />
         </S.Logo>
       </S.Link>
+      <Toogle />
       <Switch
         onChange={toogleTheme}
         checked={title === 'dark'}
